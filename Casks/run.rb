@@ -3,7 +3,7 @@ cask "run" do
   name "run"
   desc "Run CLI is an interactive CLI to manage your Google Cloud Run resources with panache!"
   homepage "https://github.com/JulienBreux/run-cli/"
-  version "0.20"
+  version "0.21"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "run" do
   on_macos do
     on_intel do
       url "https://github.com/JulienBreux/run-cli/releases/download/v#{version}/run_Darwin_x86_64.tar.gz"
-      sha256 "ece87b142fab701b799a49ad29c40d6bbdab85e938f9ba21803b7562d6ca3226"
+      sha256 "987704ae1aa33ac788989b36f4828d07a5ccf5fe9a5565ad9ccaf6e09bb42981"
     end
     on_arm do
       url "https://github.com/JulienBreux/run-cli/releases/download/v#{version}/run_Darwin_arm64.tar.gz"
-      sha256 "eb4c262c97d13aedd3e6aee9120417e8167797d0ee49d12e6875603483237316"
+      sha256 "6a0ff3c236b99ba010c86dc7963dfe8cf2b183fafd8f016bcf8bda7db29ece25"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/JulienBreux/run-cli/releases/download/v#{version}/run_Linux_x86_64.tar.gz"
-      sha256 "f906a351d065f1243c01b5ef983c52b04413e0249d2175c1d5def489c9758c62"
+      sha256 "91db24029a861d1d0a1537e250bef1cc3ba85301c78ec584606a9ca9264ef34a"
     end
     on_arm do
       url "https://github.com/JulienBreux/run-cli/releases/download/v#{version}/run_Linux_arm64.tar.gz"
-      sha256 "6156d8f12287416f78d5a0d67af550a828c993ed4a4cf0cf2aeae3754130c335"
+      sha256 "508f3f22d2d7e6460f22d8b61657b39a06f04f52b2ad782dff81fc9e4167511f"
     end
   end
 
