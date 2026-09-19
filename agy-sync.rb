@@ -5,20 +5,20 @@
 class AgySync < Formula
   desc "Google Antigravity session synchronization CLI for Cloud Firestore"
   homepage "https://github.com/JulienBreux/agy-sync/"
-  version "0.7.0"
+  version "0.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.7.0/agy-sync_Darwin_x86_64.tar.gz"
-      sha256 "8c6038106c13055d5aff456633b16a8518ca6d66120ff587b262931bb703b97d"
+      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.8.1/agy-sync_Darwin_x86_64.tar.gz"
+      sha256 "f136ebb605b4440e9a709e4f262c3ba700d0c3d5c9c29beb422022b32a43ac32"
 
       define_method(:install) do
         bin.install "agy-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.7.0/agy-sync_Darwin_arm64.tar.gz"
-      sha256 "67676f76037d9a00200c1036955fc881f1d3e2c7428ef112db4db45e96a8a7cd"
+      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.8.1/agy-sync_Darwin_arm64.tar.gz"
+      sha256 "cfed5d05f8559f669998ebe1220c687f5bbad666d04da5ecdd51677a06718f0f"
 
       define_method(:install) do
         bin.install "agy-sync"
@@ -28,15 +28,15 @@ class AgySync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.7.0/agy-sync_Linux_x86_64.tar.gz"
-      sha256 "ed3902c22254244ce6c31a21283158e1c7522275cc76b793abcd18e40d758d14"
+      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.8.1/agy-sync_Linux_x86_64.tar.gz"
+      sha256 "e62bfcec0b1581fb55d60bd4de640e340a61f924ed5a0ebf2e2af286a19628be"
       define_method(:install) do
         bin.install "agy-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.7.0/agy-sync_Linux_arm64.tar.gz"
-      sha256 "d23b3b0f0ce3c96819737549f3aad057555f42119f78fd6badeebafadbcdd283"
+      url "https://github.com/JulienBreux/agy-sync/releases/download/v0.8.1/agy-sync_Linux_arm64.tar.gz"
+      sha256 "c0c4f61558ee6301a913cc8df537b4ce4976cfd34cb2d19ceebf175b59d40f24"
       define_method(:install) do
         bin.install "agy-sync"
       end
